@@ -1,5 +1,5 @@
+import 'package:dashshomework/models/models.dart';
 import 'package:equatable/equatable.dart';
-import 'package:very_good_slide_puzzle/models/models.dart';
 
 /// {@template tile}
 /// Model for a puzzle tile.
@@ -10,6 +10,7 @@ class Tile extends Equatable {
     required this.value,
     required this.correctPosition,
     required this.currentPosition,
+    required this.face,
     this.isWhitespace = false,
   });
 
@@ -23,6 +24,9 @@ class Tile extends Equatable {
   /// The current 2D [Position] of the [Tile].
   final Position currentPosition;
 
+  /// the tile face
+  final int face;
+
   /// Denotes if the [Tile] is the whitespace tile or not.
   final bool isWhitespace;
 
@@ -32,6 +36,7 @@ class Tile extends Equatable {
       value: value,
       correctPosition: correctPosition,
       currentPosition: currentPosition,
+      face: face,
       isWhitespace: isWhitespace,
     );
   }

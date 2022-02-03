@@ -1,7 +1,8 @@
+import 'package:dashshomework/models/models.dart';
+import 'package:dashshomework/puzzle/puzzle.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:very_good_slide_puzzle/models/models.dart';
-import 'package:very_good_slide_puzzle/puzzle/puzzle.dart';
+import 'package:just_audio/just_audio.dart';
 
 /// {@template puzzle_layout_delegate}
 /// A delegate for computing the layout of the puzzle UI.
@@ -41,14 +42,23 @@ abstract class PuzzleLayoutDelegate extends Equatable {
   ///
   /// The board should display the list of [tiles],
   /// each built with [tileBuilder].
-  Widget boardBuilder(int size, List<Widget> tiles);
+  Widget boardBuilder(
+    int size,
+    List<Widget> tiles,
+    List<int> rows,
+    List<int> cols,
+  );
 
   /// A widget builder for the puzzle tile associated
   /// with [tile] and based on the puzzle [state].
   ///
   /// To complete the puzzle, all tiles must be arranged
   /// in order by their [Tile.value].
-  Widget tileBuilder(Tile tile, PuzzleState state);
+  Widget tileBuilder(
+    Tile tile,
+    PuzzleState state,
+    AudioPlayer audioPlayer,
+  );
 
   /// A widget builder for the whitespace puzzle tile.
   Widget whitespaceTileBuilder();

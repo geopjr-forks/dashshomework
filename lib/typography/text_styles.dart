@@ -1,7 +1,6 @@
+import 'package:dashshomework/colors/colors.dart';
+import 'package:dashshomework/typography/typography.dart';
 import 'package:flutter/widgets.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:very_good_slide_puzzle/colors/colors.dart';
-import 'package:very_good_slide_puzzle/typography/typography.dart';
 
 /// Defines text styles for the puzzle UI.
 class PuzzleTextStyle {
@@ -9,7 +8,7 @@ class PuzzleTextStyle {
   static TextStyle get headline1 {
     return _baseTextStyle.copyWith(
       fontSize: 74,
-      fontWeight: PuzzleFontWeight.bold,
+      fontWeight: PuzzleFontWeight.regular,
     );
   }
 
@@ -18,7 +17,7 @@ class PuzzleTextStyle {
     return _baseTextStyle.copyWith(
       fontSize: 54,
       height: 1.1,
-      fontWeight: PuzzleFontWeight.bold,
+      fontWeight: PuzzleFontWeight.regular,
     );
   }
 
@@ -27,7 +26,7 @@ class PuzzleTextStyle {
     return _baseTextStyle.copyWith(
       fontSize: 34,
       height: 1.12,
-      fontWeight: PuzzleFontWeight.bold,
+      fontWeight: PuzzleFontWeight.regular,
     );
   }
 
@@ -43,16 +42,16 @@ class PuzzleTextStyle {
   /// Headline 4 text style
   static TextStyle get headline4 {
     return _baseTextStyle.copyWith(
-      fontSize: 24,
+      fontSize: 34,
       height: 1.15,
-      fontWeight: PuzzleFontWeight.bold,
+      fontWeight: PuzzleFontWeight.regular,
     );
   }
 
   /// Headline 4 Soft text style
   static TextStyle get headline4Soft {
     return _baseTextStyle.copyWith(
-      fontSize: 24,
+      fontSize: 34,
       height: 1.15,
       fontWeight: PuzzleFontWeight.regular,
     );
@@ -63,16 +62,16 @@ class PuzzleTextStyle {
     return _baseTextStyle.copyWith(
       fontSize: 16,
       height: 1.25,
-      fontWeight: PuzzleFontWeight.bold,
+      fontWeight: PuzzleFontWeight.regular,
     );
   }
 
-  /// Body Large Bold text style
-  static TextStyle get bodyLargeBold {
+  /// Body Large regular text style
+  static TextStyle get bodyLargeregular {
     return _baseTextStyle.copyWith(
       fontSize: 46,
       height: 1.17,
-      fontWeight: PuzzleFontWeight.bold,
+      fontWeight: PuzzleFontWeight.regular,
     );
   }
 
@@ -88,7 +87,7 @@ class PuzzleTextStyle {
   /// Body text style
   static TextStyle get body {
     return _bodyTextStyle.copyWith(
-      fontSize: 24,
+      fontSize: 34,
       height: 1.33,
       fontWeight: PuzzleFontWeight.regular,
     );
@@ -97,7 +96,7 @@ class PuzzleTextStyle {
   /// Body Small text style
   static TextStyle get bodySmall {
     return _bodyTextStyle.copyWith(
-      fontSize: 18,
+      fontSize: 28,
       height: 1.22,
       fontWeight: PuzzleFontWeight.regular,
     );
@@ -126,17 +125,18 @@ class PuzzleTextStyle {
     return _baseTextStyle.copyWith(
       fontSize: 300,
       height: 1,
-      fontWeight: PuzzleFontWeight.bold,
+      fontWeight: PuzzleFontWeight.regular,
     );
   }
 
   static const _baseTextStyle = TextStyle(
-    fontFamily: 'GoogleSans',
+    fontFamily: 'NanumPenScript',
     color: PuzzleColors.black,
     fontWeight: PuzzleFontWeight.regular,
   );
 
-  static final _bodyTextStyle = GoogleFonts.roboto(
+  static const _bodyTextStyle = TextStyle(
+    fontFamily: 'NanumPenScript',
     color: PuzzleColors.black,
     fontWeight: PuzzleFontWeight.regular,
   );

@@ -1,5 +1,5 @@
+import 'package:dashshomework/layout/layout.dart';
 import 'package:flutter/widgets.dart';
-import 'package:very_good_slide_puzzle/layout/layout.dart';
 
 /// Represents the layout size passed to [ResponsiveLayoutBuilder.child].
 enum ResponsiveLayoutSize {

@@ -1,4 +1,4 @@
-name: very_good_slide_puzzle
+name: dashshomework
 description: A Very Good Project created by Very Good CLI.
 version: 1.0.0+1
 publish_to: none
@@ -16,8 +16,9 @@ dependencies:
   flutter_bloc: ^8.0.0
   flutter_localizations:
     sdk: flutter
+  flutter_svg: ^1.0.3
   gap: ^2.0.0
-  google_fonts: ^2.1.0
+  http: ^0.13.4
   intl: ^0.17.0
   just_audio: ^0.9.18
   universal_platform: ^1.0.0+1
@@ -25,6 +26,7 @@ dependencies:
 
 dev_dependencies:
   bloc_test: ^9.0.1
+  flutter_launcher_icons: "^0.9.2"
   flutter_test:
     sdk: flutter
   mocktail: ^0.2.0
@@ -37,21 +39,13 @@ flutter:
     - assets/audio/
     - assets/images/
     - assets/images/audio_control/
-    - assets/images/dashatar/gallery/
-    - assets/images/dashatar/success/
-    - assets/images/dashatar/green/
-    - assets/images/dashatar/blue/
-    - assets/images/dashatar/yellow/
   fonts:
-    - family: GoogleSans
+    - family: NanumPenScript
       fonts:
-        - asset: assets/fonts/GoogleSans-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/GoogleSans-BoldItalic.ttf
-          weight: 700
-          style: italic
-        - asset: assets/fonts/GoogleSans-Regular.ttf
+        - asset: assets/fonts/NanumPenScript-Regular.ttf
           weight: 400
-        - asset: assets/fonts/GoogleSans-Italic.ttf
-          weight: 400
-          style: italic
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"

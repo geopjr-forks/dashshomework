@@ -1,9 +1,9 @@
 import 'dart:ui';
 
-import 'package:very_good_slide_puzzle/colors/colors.dart';
-import 'package:very_good_slide_puzzle/layout/layout.dart';
-import 'package:very_good_slide_puzzle/simple/simple.dart';
-import 'package:very_good_slide_puzzle/theme/themes/themes.dart';
+import 'package:dashshomework/colors/colors.dart';
+import 'package:dashshomework/layout/layout.dart';
+import 'package:dashshomework/simple/simple.dart';
+import 'package:dashshomework/theme/themes/themes.dart';
 
 /// {@template simple_theme}
 /// The simple puzzle theme.
@@ -22,16 +22,16 @@ class SimpleTheme extends PuzzleTheme {
   Color get nameColor => PuzzleColors.grey1;
 
   @override
-  Color get titleColor => PuzzleColors.primary1;
+  Color get titleColor => PuzzleColors.black;
 
   @override
   Color get backgroundColor => PuzzleColors.white;
 
   @override
-  Color get defaultColor => PuzzleColors.primary5;
+  Color get defaultColor => PuzzleColors.white;
 
   @override
-  Color get buttonColor => PuzzleColors.primary6;
+  Color get buttonColor => PuzzleColors.blue100;
 
   @override
   Color get hoverColor => PuzzleColors.primary3;

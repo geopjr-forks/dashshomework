@@ -8,7 +8,7 @@
     "@puzzleRestartTooltip": {
         "description": "Shown as a tooltip for the puzzle restart button"
     },
-    "puzzleChallengeTitle": "Puzzle Challenge",
+    "puzzleChallengeTitle": "Maths Puzzle Challenge",
     "@puzzleChallengeTitle": {
         "description": "Shown as the title of the puzzle"
     },
@@ -20,11 +20,11 @@
     "@puzzleNumberOfTilesLeft": {
         "description": "Indicates how many puzzle tiles are not in their correct position"
     },
-    "puzzleShuffle": "Shuffle",
+    "puzzleShuffle": "New Game",
     "@puzzleShuffle": {
         "description": "Shown on the button that shuffle the puzzle"
     },
-    "puzzleCompleted": "Well done. Congrats!",
+    "puzzleCompleted": "You do know your maths! A+",
     "@puzzleCompleted": {
         "description": "Shown as the success state when the puzzle is completed"
     },

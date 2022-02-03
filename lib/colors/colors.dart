@@ -77,6 +77,12 @@ abstract class PuzzleColors {
   /// Blue 50
   static const Color blue50 = Color(0xFF027DFD);
 
+  /// Blue 100
+  static const Color blue100 = Color(0xFF0000FF);
+
+  /// Red 100
+  static const Color red100 = Color(0xFFFF0000);
+
   /// Yellow primary
   static const Color yellowPrimary = Color(0xFF676000);
 
