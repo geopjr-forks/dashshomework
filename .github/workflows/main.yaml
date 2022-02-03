@@ -59,25 +59,25 @@ jobs:
         with:
           name: dashshomework-linux
           path: dashshomework-linux.tar
-  build_windows:
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '2.8.1'
-          cache: true
-          cache-key: flutter
-          cache-path: ${{ runner.tool_cache }}/flutter 
-      - run: flutter config --enable-windows-desktop
-      - run: flutter build windows
-      - run: |
-          cd build\windows\runner
-          Compress-Archive -Path Release -DestinationPath dashshomework-windows.zip
-      - uses: actions/upload-artifact@v2
-        with:
-          name: dashshomework-windows
-          path: 'build\windows\runner\dashshomework-windows.zip'
+  # build_windows:
+  #   runs-on: windows-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: subosito/flutter-action@v2
+  #       with:
+  #         flutter-version: '2.8.1'
+  #         cache: true
+  #         cache-key: flutter
+  #         cache-path: ${{ runner.tool_cache }}/flutter 
+  #     - run: flutter config --enable-windows-desktop
+  #     - run: flutter build windows
+  #     - run: |
+  #         cd build\windows\runner
+  #         Compress-Archive -Path Release -DestinationPath dashshomework-windows.zip
+  #     - uses: actions/upload-artifact@v2
+  #       with:
+  #         name: dashshomework-windows
+  #         path: 'build\windows\runner\dashshomework-windows.zip'
   build_macos:
     runs-on: macos-10.15
     steps:
@@ -118,7 +118,7 @@ jobs:
        build_android,
        build_ios,
        build_linux,
-       build_windows,
+      #  build_windows,
        build_macos,
        build_web
     ]
@@ -134,7 +134,7 @@ jobs:
       - run: tar -cvf dashshomework-ios.app.tar GH_ARTIFACTS/dashshomework-ios
       - uses: softprops/action-gh-release@v1
         with:
-          draft: false
+          draft: true
           files: |
             GH_ARTIFACTS/**/dashshomework-linux.tar
             GH_ARTIFACTS/**/*.apk
